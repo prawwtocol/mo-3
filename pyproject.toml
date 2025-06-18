@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "mo-3"
+version = "0.1.0"
+description = "Lab 3 on SGD and its modifications"
+authors = ["AI Assistant <gemini@google.com>"]
+readme = "report.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+matplotlib = "*"
+seaborn = "*"
+torch = "*"
+optuna = "*"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double" 
